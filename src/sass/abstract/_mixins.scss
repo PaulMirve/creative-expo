@@ -58,3 +58,23 @@
         }
     }
 }
+
+@mixin justify-grid($alignment, $text) {
+    justify-self: $alignment;
+    &:after {
+        content: $text;
+    }
+    & span {
+        display: none;
+    }
+}
+
+@mixin align-grid($alignment, $text) {
+    align-self: $alignment;
+    &:after {
+        content: $text;
+    }
+    & span {
+        display: none;
+    }
+}

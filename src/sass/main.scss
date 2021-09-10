@@ -1,10 +1,15 @@
-@import 'abstract/functions';
-@import 'abstract/mixins';
-@import 'abstract/variables';
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-@import 'base/base.scss';
-@import 'base/animations.scss';
-@import 'base/typography.scss';
-@import 'base/utilities.scss';
+@import "base/base.scss";
+@import "base/animations.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
 
-@import 'pages/home';
+@import "layout/header";
+@import "layout/landing/why-grid";
+
+@import "components/button";
+
+@import "pages/home";
