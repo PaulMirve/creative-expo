@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     $breakpoint argument choices:
         - phone
@@ -41,6 +42,18 @@ body {
 
 :root {
   --primary-font-family: "Bebas Neue", cursive;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.fade-in--slow {
+  transition: opacity 1s ease-in;
+}
+
+.appear {
+  opacity: 1;
 }
 
 body {
@@ -126,6 +139,11 @@ b {
   text-align: center;
 }
 
+.margin-center-item {
+  display: block;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
@@ -133,22 +151,27 @@ b {
   padding: 8rem 0 12rem 0;
 }
 
-.why-grid__card {
-  background-color: #fff;
+.why-grid__button-box {
+  display: grid;
+  place-items: center;
+}
+
+.property-description__card-content {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  place-items: center;
+}
+.property-description__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.why-grid__card__img {
-  width: 100%;
-}
-.why-grid__card__content {
-  padding: 4rem;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 .btn {
   border: none;
   padding: 1rem 4rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   background-color: #fff;
   font-family: var(--primary-font-family);
   color: #ee6352;
@@ -158,6 +181,10 @@ b {
   z-index: 1;
   cursor: pointer;
   transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+.btn--reverse {
+  background-color: #ee6352;
+  color: #fff;
 }
 .btn--primary::after {
   content: "";
@@ -211,7 +238,171 @@ b {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+  background-color: inherit;
+}
+.btn--md {
+  padding: 1rem 10rem;
+}
+
+.grid {
   background-color: #fff;
+  padding: 8rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80rem;
+}
+.grid-item {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: #ee6352;
+  padding: 6rem;
+}
+.grid-item-1:hover {
+  justify-self: center;
+}
+.grid-item-1:hover:after {
+  content: "Justify Center";
+}
+.grid-item-1:hover span {
+  display: none;
+}
+.grid-item-2:hover {
+  justify-self: start;
+}
+.grid-item-2:hover:after {
+  content: "Justify Start";
+}
+.grid-item-2:hover span {
+  display: none;
+}
+.grid-item-3:hover {
+  justify-self: end;
+}
+.grid-item-3:hover:after {
+  content: "Justify End";
+}
+.grid-item-3:hover span {
+  display: none;
+}
+.grid-item-4:hover {
+  align-self: center;
+}
+.grid-item-4:hover:after {
+  content: "Alignment Center";
+}
+.grid-item-4:hover span {
+  display: none;
+}
+.grid-item-5:hover {
+  align-self: start;
+}
+.grid-item-5:hover:after {
+  content: "Alignment Start";
+}
+.grid-item-5:hover span {
+  display: none;
+}
+.grid-item-6:hover {
+  align-self: end;
+}
+.grid-item-6:hover:after {
+  content: "Alignment End";
+}
+.grid-item-6:hover span {
+  display: none;
+}
+
+.card {
+  background-color: #fff;
+}
+.card__img {
+  width: 100%;
+}
+.card__content {
+  padding: 4rem;
+}
+.card--double {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card--simple {
+  background-color: #fff;
+}
+
+.info-card__title {
+  font-size: 2.4rem;
+  color: #ee6352;
+  position: relative;
+  line-height: 1;
+}
+.info-card__title::before {
+  content: "• ";
+}
+.info-card__text {
+  margin-left: 2rem;
+  line-height: 1;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-rows: auto 2fr 1fr;
+  place-items: center;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.grid-card__container {
+  height: 100%;
+  width: 100%;
+}
+.grid-card__title {
+  font-size: 3rem;
+  color: #ee6352;
+  text-transform: uppercase;
+}
+.grid-card__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background-color: #fff;
+  height: 100%;
+}
+.grid-card__grid-item {
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #ee6352;
+  padding: 2rem;
+}
+.grid-card__grid--align-items-center {
+  align-items: center;
+}
+.grid-card__grid--align-items-start {
+  align-items: start;
+}
+.grid-card__grid--align-items-end {
+  align-items: end;
+}
+.grid-card__grid--align-items-stretch {
+  align-items: stretch;
+}
+.grid-card__grid--justify-items-center {
+  jus: center;
+}
+.grid-card__grid--justify-items-start {
+  jus: start;
+}
+.grid-card__grid--justify-items-end {
+  jus: end;
+}
+.grid-card__grid--justify-items-stretch {
+  jus: stretch;
 }
 
 /*# sourceMappingURL=style.css.map */

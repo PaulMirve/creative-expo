@@ -1,0 +1,40 @@
+.grid {
+    background-color: $color-white;
+    padding: 8rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80rem;
+
+    &-item {
+        font-size: 3.6rem;
+        color: $color-white;
+        font-weight: 700;
+        background-color: $color-primary;
+        padding: 6rem;
+
+        &-1:hover {
+            @include justify-grid(center, "Justify Center");
+        }
+
+        &-2:hover {
+            @include justify-grid(start, "Justify Start");
+        }
+
+        &-3:hover {
+            @include justify-grid(end, "Justify End");
+        }
+
+        &-4:hover {
+            @include align-grid(center, "Alignment Center");
+        }
+
+        &-5:hover {
+            @include align-grid(start, "Alignment Start");
+        }
+
+        &-6:hover {
+            @include align-grid(end, "Alignment End");
+        }
+    }
+}

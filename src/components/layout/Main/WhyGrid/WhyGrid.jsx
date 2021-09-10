@@ -1,12 +1,17 @@
 import React from 'react';
+import Grid1 from '../../Grids/Grid1';
+import Button from '../../../Button/Button';
+import Card from '../../../Card/Card';
+import CardImage from '../../../Card/CardImage';
+import CardContent from '../../../Card/CardContent';
 
 export default function WhyGrid() {
     return (
         <section className="why-grid">
 
-            <div className="why-grid__card mb-md">
-                <img src="../img/paulflashback.png" alt="Paul flashback" className="why-grid__card__img" />
-                <div className="why-grid__card__content">
+            <Card className="mb-md" type="double">
+                <CardImage src="../img/paulflashback.png" alt="Paul flashback" />
+                <CardContent>
                     <h2 className="heading-secondary mb-sm">El mayor reto de la humanidad: centrar un componente</h2>
                     <p className="paragraph mb-sm">
                         En mi corta vida como desarrollador de software, me he enfrentado varías veces con el mismo problema:
@@ -19,12 +24,24 @@ export default function WhyGrid() {
                     <p className="paragraph">
                         Esta muy confundido con tantas opciones y posibilidades, hasta que descubrí...
                     </p>
+                </CardContent>
+            </Card>
+            <h1 className="heading-huge fade-in fade-in--slow text-align-center">CSS GRID!!!</h1>
+            <div className="why-grid__card--simple mb-md">
+                <div className="why-grid__card__content">
+                    <p className="paragraph text-align-center">
+                        Si flexbox ya nos facilitaba la vida, CSS Grid vino a darnos una nueva serie de herramientas para organizar nuestras interfaces:
+                    </p>
+
                 </div>
             </div>
-            <h1 className="heading-huge text-align-center">CSS GRID!!!</h1>
-            <div className="why-grid__card__content">
-                <p className="paragraph">Gracias a CSS Grid, la tarea de centrar elementos en la pantalla se ha vuelto muy sencilla:</p>
+            <Grid1 />
+            <div className="why-grid__button-box">
+                <Button
+                    onClick={() => window.open('https://codepen.io/paulmirve/pen/abwJLqd', '_blank').focus()}
+                    className="mt-md"
+                    size="md">Ver código</Button>
             </div>
-        </section>
+        </section >
     )
 }
