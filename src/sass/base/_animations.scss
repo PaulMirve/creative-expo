@@ -1,12 +1,54 @@
 .fade-in {
     opacity: 0;
-    transition: opacity .4s ease-in;
+    transition: opacity 0.4s ease-in;
 
     &--slow {
         transition: opacity 1s ease-in;
+    }
+
+    &--md{
+        transition: opacity 0.6s ease-in;
+    }
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in;
+
+    &-left {
+        transform: translateX(-10rem);
+
+    }
+
+    &-right{
+        transform: translateX(10rem);
+    }
+
+    &-up{
+        transform: translateY(-10rem);
+    }
+
+    &-down{
+        transform: translateY(10rem);
+    }
+
+    &--slow{
+        transition: opacity 0.4s ease-in, transform 0.6s ease-in;;
+    }
+}
+
+.slide-headings {
+    opacity: 0;
+    &--5{
+        @for $i from 1 through 5 {
+            h3:nth-child(#{$i}) {
+                transition: opacity 0.4s, transform ($i * 0.4) * 1s ease-in;
+            }
+        }
     }
 }
 
 .appear {
     opacity: 1;
+    transform: translateX(0);
 }

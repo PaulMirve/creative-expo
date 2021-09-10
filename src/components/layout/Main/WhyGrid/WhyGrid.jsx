@@ -8,7 +8,6 @@ import CardContent from '../../../Card/CardContent';
 export default function WhyGrid() {
     return (
         <section className="why-grid">
-
             <Card className="mb-md" type="double">
                 <CardImage src="../img/paulflashback.png" alt="Paul flashback" />
                 <CardContent>
@@ -17,10 +16,12 @@ export default function WhyGrid() {
                         En mi corta vida como desarrollador de software, me he enfrentado varías veces con el mismo problema:
                         <b>centrar elementos</b>.
                         Hay miles de soluciones para este problema: </p>
-                    <h3 className="heading-3 heading-3--black">Margin auto</h3>
-                    <h3 className="heading-3 heading-3--black">Absolute position</h3>
-                    <h3 className="heading-3 heading-3--black">Paddings</h3>
-                    <h3 className="heading-3 heading-3--black mb-sm">Entre otras muchas opciones...</h3>
+                    <span className="slide-headings--5">
+                        <h3 className="heading-3 heading-3--black slide-headings slide-right">Margin auto</h3>
+                        <h3 className="heading-3 heading-3--black slide-headings slide-right">Absolute position</h3>
+                        <h3 className="heading-3 heading-3--black slide-headings slide-right">Paddings</h3>
+                        <h3 className="heading-3 heading-3--black slide-headings slide-right mb-sm">Entre otras muchas opciones...</h3>
+                    </span>
                     <p className="paragraph">
                         Esta muy confundido con tantas opciones y posibilidades, hasta que descubrí...
                     </p>

@@ -14,6 +14,12 @@ export default function App() {
         document.querySelectorAll('.fade-in').forEach(el => {
             appearOnScroll.observe(el);
         });
+        document.querySelectorAll('.slide').forEach(el => {
+            appearOnScroll.observe(el);
+        });
+        document.querySelectorAll('.slide-headings').forEach(el => {
+            appearOnScroll.observe(el);
+        });
     }, [])
 
     return (

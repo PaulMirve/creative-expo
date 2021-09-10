@@ -8,7 +8,7 @@ export const appearOnScroll = new IntersectionObserver((entries, appearOnScroll)
         }
     });
 }, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 1
-    });
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.4
+});

@@ -18,10 +18,10 @@ export default function GridCard({ className = '', title, alignment }) {
             <h5 className="grid-card__title">{title}</h5>
             <div className="grid-card__container">
                 <div className={`grid-card__grid ${aligned ? `grid-card__grid--${alignment}-${direction}` : ''}`}>
-                    <div className="grid-card__grid-item grid-card__grid-item-1">Item 1</div>
-                    <div className="grid-card__grid-item grid-card__grid-item-2">Item 2</div>
-                    <div className="grid-card__grid-item grid-card__grid-item-3">Item 3</div>
-                    <div className="grid-card__grid-item grid-card__grid-item-4">Item 4</div>
+                    <div className="grid-card__grid-item grid-card__grid-item-1 slide slide-left">Item 1</div>
+                    <div className="grid-card__grid-item grid-card__grid-item-2 slide slide--slow slide-up">Item 2</div>
+                    <div className="grid-card__grid-item grid-card__grid-item-3 slide slide-down">Item 3</div>
+                    <div className="grid-card__grid-item grid-card__grid-item-4 slide slide-right">Item 4</div>
                 </div>
             </div>
             <div className="grid-card__buttons">

@@ -1,9 +1,11 @@
-.header{
+.header {
+    display: grid;
+    place-items: center;
     background-color: $color-white;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     text-align: center;
-    padding: 4rem 0 12rem 0;
-    height: 30vh;
+    padding: 4rem 10vw 12rem 10vw;
+    height: 90vh;
 
     @include respond(tab-port) {
         clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
