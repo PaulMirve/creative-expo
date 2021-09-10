@@ -1,6 +1,5 @@
 .card {
     background-color: $color-white;
-
     &__img {
         width: 100%;
     }
@@ -12,6 +11,10 @@
     &--double {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include respond(tab-port) {
+            grid-template-columns: none;
+        }
     }
 
     &--simple {

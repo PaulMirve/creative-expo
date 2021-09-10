@@ -148,7 +148,13 @@ b {
   background-color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   text-align: center;
-  padding: 8rem 0 12rem 0;
+  padding: 4rem 0 12rem 0;
+  height: 30vh;
+}
+@media (max-width: 56.25em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  }
 }
 
 .why-grid__button-box {
@@ -166,6 +172,11 @@ b {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   margin-top: 4rem;
+}
+@media (max-width: 56.25em) {
+  .property-description__grid {
+    grid-template-columns: none;
+  }
 }
 
 .btn {
@@ -252,6 +263,11 @@ b {
   grid-template-columns: repeat(3, 1fr);
   height: 80rem;
 }
+@media (max-width: 75em) {
+  .grid {
+    display: none;
+  }
+}
 .grid-item {
   font-size: 3.6rem;
   color: #fff;
@@ -327,6 +343,11 @@ b {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 56.25em) {
+  .card--double {
+    grid-template-columns: none;
+  }
+}
 .card--simple {
   background-color: #fff;
 }
@@ -393,16 +414,16 @@ b {
   align-items: stretch;
 }
 .grid-card__grid--justify-items-center {
-  jus: center;
+  justify-items: center;
 }
 .grid-card__grid--justify-items-start {
-  jus: start;
+  justify-items: start;
 }
 .grid-card__grid--justify-items-end {
-  jus: end;
+  justify-items: end;
 }
 .grid-card__grid--justify-items-stretch {
-  jus: stretch;
+  justify-items: stretch;
 }
 
 /*# sourceMappingURL=style.css.map */

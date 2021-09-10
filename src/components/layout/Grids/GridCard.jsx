@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../../Button/Button';
 
-export default function GridCard({ className, title, alignment }) {
+export default function GridCard({ className = '', title, alignment }) {
     const [aligned, setAligned] = useState(false);
     const [direction, setDirection] = useState('');
     const align = (value) => {
