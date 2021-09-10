@@ -4,7 +4,7 @@ export default function WhyGrid() {
     return (
         <section className="why-grid">
 
-            <div className="why-grid__card">
+            <div className="why-grid__card mb-md">
                 <img src="../img/paulflashback.png" alt="Paul flashback" className="why-grid__card__img" />
                 <div className="why-grid__card__content">
                     <h2 className="heading-secondary mb-sm">El mayor reto de la humanidad: centrar un componente</h2>
@@ -20,6 +20,10 @@ export default function WhyGrid() {
                         Esta muy confundido con tantas opciones y posibilidades, hasta que descubrí...
                     </p>
                 </div>
+            </div>
+            <h1 className="heading-huge text-align-center">CSS GRID!!!</h1>
+            <div className="why-grid__card__content">
+                <p className="paragraph">Gracias a CSS Grid, la tarea de centrar elementos en la pantalla se ha vuelto muy sencilla:</p>
             </div>
         </section>
     )
