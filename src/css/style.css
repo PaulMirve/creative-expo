@@ -81,6 +81,10 @@ body {
   font-weight: 500;
 }
 
+b {
+  color: #ee6352;
+}
+
 .mb-lg {
   margin-bottom: 10rem;
 }
@@ -113,7 +117,7 @@ body {
   background-color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   text-align: center;
-  height: 25vh;
+  padding: 8rem 0 12rem 0;
 }
 
 .why-grid__card {
