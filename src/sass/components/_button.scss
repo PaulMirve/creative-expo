@@ -82,9 +82,12 @@
         }
     }
 
-
-
     &--md {
         padding: 1rem 10rem;
     }
+}
+
+.button-box {
+    display: grid;
+    place-items: center;
 }

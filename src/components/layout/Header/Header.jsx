@@ -1,10 +1,11 @@
 import React from 'react'
+import Heading from '../../Typography/Heading'
 
 export default function Header() {
     return (
         <header className="header">
-            <h1 className="heading-huge fade-in">El poder de css grid y sass</h1>
-            <h5 className="heading-3 fade-in fade-in--slow">Por Paul Miranda</h5>
+            <Heading type="huge" className="fade-in">El poder de css grid y sass</Heading>
+            <Heading type="3" className="fade-in fade-in--slow">Por Paul Miranda</Heading>
         </header>
     )
 }

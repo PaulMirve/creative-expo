@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../../../Button/Button';
+import ButtonBox from '../../../Button/ButtonBox';
 import Card from '../../../Card/Card';
 import CardContent from '../../../Card/CardContent';
 import InfoCard from '../../../InfoCard/InfoCard';
@@ -42,6 +44,12 @@ export default function PropertyDescriptions() {
                 <GridCard title="Justify items" alignment="justify-items" />
                 <GridCard title="Align items" alignment="align-items" />
             </div>
+            <ButtonBox>
+                <Button
+                    onClick={() => window.open('https://codepen.io/paulmirve/pen/BaZRdvQ', '_blank').focus()}
+                    className="mt-md"
+                    size="md">Ver código</Button>
+            </ButtonBox>
         </section>
     )
 }
