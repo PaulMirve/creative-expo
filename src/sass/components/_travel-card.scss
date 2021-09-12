@@ -1,37 +1,38 @@
 .travel-card {
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 0.6fr 0.6fr;
+    grid-template-columns: repeat(5, 1fr);
     place-items: center;
     grid-template-areas:
-        "photo photo title title"
-        "photo photo stats stats"
-        "photo photo text text"
-        "photo photo info info";
+        "photo photo photo title title"
+        "photo photo photo stats stats"
+        "photo photo photo text text"
+        "photo photo photo info info";
     background-color: $color-white;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 1rem 4rem rgba(black, 0.2);
     transition: all 0.2s ease-in;
 
-    &:hover{
+    &:hover {
         transform: translateY(-0.4rem);
         box-shadow: 0 1rem 4rem rgba(black, 0.4);
     }
-
-    @include respond(tab-port){
-        grid-template-areas:
-        "photo photo photo photo"
-        "title title title title"
-        "stats stats stats stats"
-        "text text text text"
-        "info info info info";
-        width: 100%;
+    
+    @include respond(tab-land) {
+        width: 65%;
         text-align: center;
     }
 
-    @include respond(tab-land){
-        width: 65%;
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "photo photo"
+            "title title"
+            "stats stats"
+            "text text"
+            "info info";
+        width: 100%;
         text-align: center;
     }
 
@@ -60,7 +61,7 @@
         padding: 0.5rem 4rem;
         border-bottom-right-radius: 5px;
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
             width: 100%;
             padding: 0.5rem 0;
         }
@@ -83,7 +84,7 @@
         transition: transform 0.2s ease-in;
         cursor: pointer;
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
             left: auto;
             right: 1rem;
         }
@@ -94,6 +95,10 @@
 
         &:hover {
             transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1.05);
         }
     }
 

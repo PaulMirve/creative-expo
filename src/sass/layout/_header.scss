@@ -8,6 +8,6 @@
     height: 90vh;
 
     @include respond(tab-port) {
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
 }

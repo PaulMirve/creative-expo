@@ -13,26 +13,26 @@ export default function GridAreas() {
             <Heading className="text-align-center">De las funciones mas utiles de CSS Grid:</Heading>
             <Heading className="text-align-center">Grid areas</Heading>
             <Card type="double" className="mb-md mt-md">
-                <CardContent>
+                <CardContent className="grid-areas__areas-layout">
                     <span className="grid-areas__areas-layout--desktop">
-                        <Heading type="3" color="black">photo photo title title</Heading>
-                        <Heading type="3" color="black">photo photo stats stats</Heading>
-                        <Heading type="3" color="black">photo photo text text</Heading>
-                        <Heading type="3" color="black">photo photo info info</Heading>
+                        <Heading type="3" color="black">photo photo photo title title</Heading>
+                        <Heading type="3" color="black">photo photo photo stats stats</Heading>
+                        <Heading type="3" color="black">photo photo photo text text</Heading>
+                        <Heading type="3" color="black">photo photo photo info info</Heading>
                     </span>
                     <span className="grid-areas__areas-layout--mobile">
-                        <Heading type="3" color="black">photo photo photo photo</Heading>
-                        <Heading type="3" color="black">title title title title</Heading>
-                        <Heading type="3" color="black">stats stats stats stats</Heading>
-                        <Heading type="3" color="black">text text text text</Heading>
-                        <Heading type="3" color="black">info info info info</Heading>
+                        <Heading type="3" color="black">photo photo</Heading>
+                        <Heading type="3" color="black">title title</Heading>
+                        <Heading type="3" color="black">stats stats</Heading>
+                        <Heading type="3" color="black">text text</Heading>
+                        <Heading type="3" color="black">info info</Heading>
                     </span>
                 </CardContent>
                 <CardContent>
                     <Paragraph>
-                        Con CSS Grid tenemos la opción de asignarle un nombre a cada área de nuestra interfaz y ordenarla en base a su nombre,
-                        esto nos ayuda mucho con el tema de la responsividad, ya que podemos hacer que en cierto puento nuestros componentes
-                        se reordenen para que se tenga una mejor visualización de los elementos.
+                        Con CSS Grid tenemos la opción de <b>asignar un nombre</b> a cada área de nuestra interfaz y ordenarla en base a su nombre,
+                        esto nos ayuda mucho con el tema de la <b>responsividad</b>, ya que podemos hacer que en cierto puqnto nuestros componentes
+                        se <b>reordenen</b> para que se tenga una mejor visualización de los elementos.
                     </Paragraph>
                 </CardContent>
             </Card>
