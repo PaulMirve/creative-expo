@@ -251,6 +251,231 @@ b {
   }
 }
 
+.why-sass__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+}
+@media (max-width: 56.25em) {
+  .why-sass__container {
+    grid-template-columns: none;
+  }
+}
+.why-sass__img {
+  justify-self: start;
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  background-color: #adb5bd;
+}
+@media (max-width: 56.25em) {
+  .why-sass__img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+  }
+}
+.why-sass__photo {
+  width: 100%;
+}
+.why-sass__info {
+  grid-column: 3/-1;
+  padding: 4rem;
+}
+.why-sass__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: start;
+  align-items: center;
+}
+@media (max-width: 56.25em) {
+  .why-sass__features {
+    grid-template-columns: none;
+  }
+}
+.why-sass__feature {
+  cursor: pointer;
+}
+.why-sass__feature--active {
+  color: #e63946;
+  transform: scale(1.2);
+}
+.why-sass__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.why-sass__demo-variables__container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0;
+}
+@media (max-width: 56.25em) {
+  .why-sass__demo-variables__container {
+    grid-template-columns: none;
+  }
+}
+.why-sass__demo-variables-heading {
+  font-family: "Bebas Neue", cursive;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+.why-sass__demo-variables-heading--1 {
+  color: #cdb4db;
+}
+.why-sass__demo-variables-heading--2 {
+  color: #3c6e71;
+}
+.why-sass__demo-variables-heading--3 {
+  color: #ff758f;
+}
+.why-sass__demo-variables-heading--4 {
+  color: #284b63;
+}
+.why-sass__demo-variables-heading--5 {
+  color: #00bbf9;
+}
+.why-sass__demo-variables-heading--6 {
+  color: #0081a7;
+}
+.why-sass__demo-functions__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  font-size: 52px;
+  padding: 2rem 10rem;
+  font-family: "Bebas Neue", cursive;
+}
+@media (max-width: 56.25em) {
+  .why-sass__demo-functions__container {
+    grid-template-columns: none;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.why-sass__demo-functions-item--1 {
+  animation: fadein 1s infinite;
+}
+.why-sass__demo-functions-item--2 {
+  animation: fadein 3s infinite;
+}
+.why-sass__demo-functions-item--3 {
+  animation: fadein 5s infinite;
+}
+.why-sass__demo-mixins__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  padding: 2rem 4rem;
+}
+@media (max-width: 56.25em) {
+  .why-sass__demo-mixins__container {
+    grid-template-columns: none;
+  }
+}
+.why-sass__demo-mixins__btn {
+  padding: 1rem 4rem;
+  font-size: 2.4rem;
+  font-family: "Bebas Neue", cursive;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+.why-sass__demo-mixins__btn--1 {
+  border-radius: 50px;
+  background-color: #9ae5e6;
+}
+.why-sass__demo-mixins__btn--1:hover {
+  transform: scale(1.1);
+}
+.why-sass__demo-mixins__btn--1:active {
+  transform: scale(1);
+}
+.why-sass__demo-mixins__btn--2 {
+  background-color: #29524a;
+  color: white;
+}
+.why-sass__demo-mixins__btn--2:hover {
+  background-color: #bad4aa;
+  color: #29524a;
+}
+.why-sass__demo-mixins__btn--2:active {
+  background-color: #103900;
+}
+.why-sass__demo-mixins__btn--3 {
+  background-color: #685f74;
+  color: #f3e0ec;
+  border-radius: 3px;
+}
+.why-sass__demo-mixins__btn--3:hover {
+  transform: translateY(-0.4rem);
+}
+.why-sass__demo-mixins__btn--3:active {
+  transform: translateY(-0.2rem);
+}
+.why-sass__demo-nesting {
+  display: grid;
+  place-items: center;
+}
+.why-sass__demo-nesting__container {
+  padding: 4rem;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 56.25em) {
+  .why-sass__demo-nesting__container {
+    padding: 0;
+  }
+}
+.why-sass__demo-nesting__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "icon icon" "icon icon" "title title" "text text";
+  background-color: #343a40;
+  color: #e9ecef;
+  width: 50%;
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+}
+@media (max-width: 56.25em) {
+  .why-sass__demo-nesting__card {
+    width: 100%;
+  }
+}
+.why-sass__demo-nesting__card__icon-box {
+  grid-area: icon;
+}
+.why-sass__demo-nesting__card__icon-box--container {
+  border: 12px solid #e9ecef;
+  border-radius: 20px;
+  transform: rotate(0.9turn);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem;
+}
+.why-sass__demo-nesting__card__icon-box svg {
+  width: 8rem;
+  transform: rotate(-0.9turn);
+}
+.why-sass__demo-nesting__card__title {
+  grid-area: title;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.4rem;
+}
+.why-sass__demo-nesting__card__text {
+  grid-area: text;
+  font-size: 1.2rem;
+}
+
 .btn {
   border: none;
   padding: 1rem 4rem;
@@ -412,6 +637,8 @@ b {
 }
 .card__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card__content {
   padding: 4rem;

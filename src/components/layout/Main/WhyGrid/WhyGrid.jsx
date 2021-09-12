@@ -35,7 +35,6 @@ export default function WhyGrid() {
                     <p className="paragraph text-align-center">
                         Si flexbox ya nos facilitaba la vida, CSS Grid vino a darnos una nueva serie de herramientas para organizar nuestras interfaces:
                     </p>
-
                 </div>
             </div>
             <Grid1 />

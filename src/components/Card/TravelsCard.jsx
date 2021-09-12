@@ -1,5 +1,5 @@
 import React from 'react';
-export default function TravelsCard({ photo, title }) {
+export default function TravelsCard() {
     return (
         <div className="travel-card">
             <figure className="travel-card__photo-frame">
@@ -7,7 +7,7 @@ export default function TravelsCard({ photo, title }) {
                 <button className="travel-card__button">
                     <img src="../img/svg/icon-heart.svg" alt="Icon heart" />
                 </button>
-                <img src="../img/travel.jpg" alt="Photo" className="travel-card__photo" />
+                <img src="../img/travel.jpg" alt="Destination" className="travel-card__photo" />
             </figure>
             <h3 className="travel-card__title">Viaja ahora</h3>
             <div className="travel-card__stats">

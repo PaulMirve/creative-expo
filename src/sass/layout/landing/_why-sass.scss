@@ -1,0 +1,281 @@
+.why-sass {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: $color-white;
+
+        @include respond(tab-port) {
+            grid-template-columns: none;
+        }
+    }
+
+    &__img {
+        justify-self: start;
+        grid-column: 1 / span 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+        background-color: $color-grey-dark;
+
+        @include respond(tab-port) {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+        }
+    }
+
+    &__photo {
+        width: 100%;
+    }
+
+    &__info {
+        grid-column: 3/ -1;
+        padding: 4rem;
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: start;
+        align-items: center;
+
+        @include respond(tab-port) {
+            grid-template-columns: none;
+        }
+    }
+
+    &__feature {
+        cursor: pointer;
+
+        &--active {
+            color: $color-primary-dark;
+            transform: scale(1.2);
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    &__demo {
+        &-variables {
+            $color-1: #cdb4db;
+            $color-2: #3c6e71;
+            $color-3: #ff758f;
+            $color-4: #284b63;
+            $color-5: #00bbf9;
+            $color-6: #0081a7;
+
+            &__container {
+                display: grid;
+                place-items: center;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 2rem 0;
+
+                @include respond(tab-port){
+                    grid-template-columns: none;
+                }
+            }
+
+            &-heading {
+                font-family: "Bebas Neue", cursive;
+                font-size: 42px;
+                letter-spacing: 2px;
+                &--1 {
+                    color: $color-1;
+                }
+
+                &--2 {
+                    color: $color-2;
+                }
+
+                &--3 {
+                    color: $color-3;
+                }
+
+                &--4 {
+                    color: $color-4;
+                }
+
+                &--5 {
+                    color: $color-5;
+                }
+
+                &--6 {
+                    color: $color-6;
+                }
+            }
+        }
+
+        &-functions {
+            @function animationTime($miliseconds) {
+                @return $miliseconds * 0.01;
+            }
+
+            &__container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                place-items: center;
+                font-size: 52px;
+                padding: 2rem 10rem;
+                font-family: "Bebas Neue", cursive;
+
+                @include respond(tab-port){
+                    grid-template-columns: none;
+                }
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            &-item {
+                &--1 {
+                    animation: fadein animationTime(100) * 1s infinite;
+                }
+
+                &--2 {
+                    animation: fadein animationTime(300) * 1s infinite;
+                }
+
+                &--3 {
+                    animation: fadein animationTime(500) * 1s infinite;
+                }
+            }
+        }
+
+        &-mixins {
+            @mixin button-style {
+                padding: 1rem 4rem;
+                font-size: 2.4rem;
+                font-family: "Bebas Neue", cursive;
+                border: none;
+                transition: all 0.2s ease-in;
+            }
+
+            &__container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6rem;
+                padding: 2rem 4rem;
+
+                @include respond(tab-port){
+                    grid-template-columns: none;
+                }
+            }
+
+            &__btn {
+                @include button-style;
+                &--1 {
+                    border-radius: 50px;
+                    background-color: #9ae5e6;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    &:active {
+                        transform: scale(1);
+                    }
+                }
+
+                &--2 {
+                    background-color: #29524a;
+                    color: white;
+
+                    &:hover {
+                        background-color: #bad4aa;
+                        color: #29524a;
+                    }
+
+                    &:active {
+                        background-color: #103900;
+                    }
+                }
+
+                &--3 {
+                    background-color: #685f74;
+                    color: #f3e0ec;
+                    border-radius: 3px;
+
+                    &:hover {
+                        transform: translateY(-0.4rem);
+                    }
+
+                    &:active {
+                        transform: translateY(-0.2rem);
+                    }
+                }
+            }
+        }
+
+        &-nesting {
+            display: grid;
+            place-items: center;
+
+            &__container {
+                padding: 4rem;
+                display: grid;
+                place-items: center;
+                @include respond(tab-port) {
+                    padding: 0;
+                }
+            }
+            &__card {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas:
+                    "icon icon"
+                    "icon icon"
+                    "title title"
+                    "text text";
+                background-color: #343a40;
+                color: #e9ecef;
+                width: 50%;
+                padding: 4rem;
+                border-radius: 10px;
+                position: relative;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                &__icon-box {
+                    grid-area: icon;
+
+                    &--container {
+                        border: 12px solid #e9ecef;
+                        border-radius: 20px;
+                        transform: rotate(0.9turn);
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        padding: 2rem;
+                    }
+                    svg {
+                        width: 8rem;
+                        transform: rotate(-0.9turn);
+                    }
+                }
+
+                &__title {
+                    grid-area: title;
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 2.4rem;
+                }
+
+                &__text {
+                    grid-area: text;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
