@@ -20,6 +20,7 @@ export default function DrakeMeme() {
                 <div className="drake-meme__text drake-meme__text--2">
                     <span>
                         <Heading type="3" color="black" >Display grid</Heading>
+                        <Heading type="3" color="black" >Place-items: center</Heading>
                         <Heading type="3" color="black" >Grid areas</Heading>
                         <Heading type="3" color="black" >Scss</Heading>
                     </span>

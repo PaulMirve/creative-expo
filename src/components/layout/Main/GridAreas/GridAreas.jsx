@@ -10,11 +10,11 @@ import Paragraph from '../../../Typography/Paragraph'
 export default function GridAreas() {
     return (
         <div className="grid-areas mt-lg">
-            <Heading className="text-align-center">De las funciones mas utiles de CSS Grid:</Heading>
-            <Heading className="text-align-center">Grid areas</Heading>
+            <Heading className="text-align-center slide slide-down">De las funciones mas utiles de CSS Grid:</Heading>
+            <Heading className="text-align-center slide slide--md slide-down">Grid areas</Heading>
             <Card type="double" className="mb-md mt-md">
                 <CardContent className="grid-areas__areas-layout">
-                    <span className="grid-areas__areas-layout--desktop">
+                    <span className="grid-areas__areas-layout--desktop slide slide--md slide-left">
                         <Heading type="3" color="black">photo photo photo title title</Heading>
                         <Heading type="3" color="black">photo photo photo stats stats</Heading>
                         <Heading type="3" color="black">photo photo photo text text</Heading>
@@ -28,7 +28,7 @@ export default function GridAreas() {
                         <Heading type="3" color="black">info info</Heading>
                     </span>
                 </CardContent>
-                <CardContent>
+                <CardContent className="slide slide--md slide-right">
                     <Paragraph>
                         Con CSS Grid tenemos la opción de <b>asignar un nombre</b> a cada área de nuestra interfaz y ordenarla en base a su nombre,
                         esto nos ayuda mucho con el tema de la <b>responsividad</b>, ya que podemos hacer que en cierto puqnto nuestros componentes

@@ -11,10 +11,10 @@ export default function WhyGrid() {
     return (
         <section className="why-grid">
             <Card className="mb-md" type="double">
-                <CardImage src="../img/paulflashback.png" alt="Paul flashback" />
+                <CardImage src="../img/paulflashback.png" alt="Paul flashback" className="slide slide--md slide-left" />
                 <CardContent>
-                    <Heading type="secondary" className="mb-sm">El mayor reto de la humanidad: centrar un componente</Heading>
-                    <p className="paragraph mb-sm">
+                    <Heading type="secondary" className="mb-sm slide slide--md slide-right">El mayor reto de la humanidad: centrar un componente</Heading>
+                    <p className="paragraph slide slide--md slide-right mb-sm">
                         En mi corta vida como desarrollador de software, me he enfrentado varías veces con el mismo problema:
                         <b>centrar elementos</b>.
                         Hay miles de soluciones para este problema: </p>
@@ -24,7 +24,7 @@ export default function WhyGrid() {
                         <Heading type='3' color="black" className="slide-headings slide-right">Paddings</Heading>
                         <Heading type='3' color="black" className="slide-headings slide-right mb-sm">Entre otras muchas opciones...</Heading>
                     </span>
-                    <p className="paragraph">
+                    <p className="paragraph slide slide--md slide-right">
                         Esta muy confundido con tantas opciones y posibilidades, hasta que descubrí...
                     </p>
                 </CardContent>

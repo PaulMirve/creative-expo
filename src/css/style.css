@@ -38,6 +38,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #ddd;
+  overflow-x: hidden;
 }
 
 :root {
@@ -59,11 +60,20 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease-in, transform 0.4s ease-in;
 }
+.slide--md {
+  transition: opacity 0.4s ease-in, transform 0.6s ease-in;
+}
 .slide-left {
   transform: translateX(-10rem);
 }
+.slide-left--long {
+  transform: translateX(-25rem);
+}
 .slide-right {
   transform: translateX(10rem);
+}
+.slide-right--long {
+  transform: translateX(25rem);
 }
 .slide-up {
   transform: translateY(-10rem);

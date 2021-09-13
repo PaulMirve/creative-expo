@@ -11,33 +11,33 @@ export default function PropertyDescriptions() {
         <section className="property-description">
             <Card className="mt-md" type="double">
                 <CardContent>
-                    <p className="paragraph">
+                    <p className="paragraph slide slide--md slide-left">
                         Para convertir un <b>div</b> en un grid, lo unico que tenemos que hacer es establecer su display como grid:
                     </p>
-                    <p className="paragraph"><b>display:grid</b></p>
-                    <p className="paragraph">A partir de aquí podemos usar las siguientes propiedades:</p>
-                    <InfoCard title="justify-items">
+                    <p className="paragraph slide slide--md slide-left"><b>display:grid</b></p>
+                    <p className="paragraph slide slide--md slide-left">A partir de aquí podemos usar las siguientes propiedades:</p>
+                    <InfoCard title="justify-items" className="slide slide--md slide-left">
                         Esta propiedad nos sirve para alinear los elementos horizontalmente.
                     </InfoCard>
-                    <InfoCard title="align-items">
+                    <InfoCard title="align-items" className="slide slide--md slide-left">
                         Esta propiedad nos sirve para alinear los elementos verticalmente.
                     </InfoCard>
-                    <InfoCard title="justify-self">
+                    <InfoCard title="justify-self" className="slide slide--md slide-left">
                         Esta propiedad nos sirve para sacar un elemento del grid de la justify del padre.
                     </InfoCard>
-                    <InfoCard title="align-self">
+                    <InfoCard title="align-self" className="slide slide--md slide-left">
                         Esta propiedad nos sirve para sacar un elemento del grid del aliniamiento del padre.
                     </InfoCard>
-                    <InfoCard title="place-items">
+                    <InfoCard title="place-items" className="slide slide--md slide-left">
                         Esta propiedad nos sirve para alinear los elementos en el centro del contenedor con solo una propiedad.
                     </InfoCard>
                 </CardContent>
-                <CardContent className="property-description__card-content">
-                    <h3 className="heading-3 heading-3--black">justify-items</h3>
-                    <h3 className="heading-3 heading-3--black">align-content</h3>
-                    <h3 className="heading-3 heading-3--black">justify-self</h3>
-                    <h3 className="heading-3 heading-3--black">align-self</h3>
-                    <h3 className="heading-3 heading-3--black">place-items</h3>
+                <CardContent className="property-description__card-content slide-headings--5">
+                    <h3 className="heading-3 heading-3--black slide-headings slide-right">justify-items</h3>
+                    <h3 className="heading-3 heading-3--black slide-headings slide-right">align-content</h3>
+                    <h3 className="heading-3 heading-3--black slide-headings slide-right">justify-self</h3>
+                    <h3 className="heading-3 heading-3--black slide-headings slide-right">align-self</h3>
+                    <h3 className="heading-3 heading-3--black slide-headings slide-right">place-items</h3>
                 </CardContent>
             </Card>
             <div className="property-description__grid">
