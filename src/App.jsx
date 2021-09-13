@@ -4,6 +4,7 @@ import {
     Route,
     Switch
 } from "react-router-dom";
+import Footer from './components/layout/Footer/Footer';
 import Landing from './components/layout/Landing';
 import history from './history';
 import { appearOnScroll } from './scripts/animations';
@@ -27,6 +28,7 @@ export default function App() {
             <Switch>
                 <Route exact path="/" component={Landing} />
             </Switch>
+            <Footer />
         </Router>
     )
 }

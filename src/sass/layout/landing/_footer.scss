@@ -1,0 +1,16 @@
+.footer {
+    background-color: #484a47;
+    color: $color-white;
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+    margin-top: 10rem;
+
+    @include respond(tab-port) {
+        text-align: center;
+    }
+
+    a {
+        color: $color-primary;
+        font-weight: 700;
+    }
+}

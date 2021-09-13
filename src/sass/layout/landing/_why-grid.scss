@@ -1,0 +1,5 @@
+.why-grid{
+    @include respond(tab-port){
+        text-align: center;
+    }
+}
