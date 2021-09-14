@@ -12,7 +12,7 @@ export default function PropertyDescriptions() {
             <Card className="mt-md" type="double">
                 <CardContent>
                     <p className="paragraph slide slide--md slide-left">
-                        Para convertir un <b>div</b> en un grid, lo unico que tenemos que hacer es establecer su display como grid:
+                        Para convertir un <b>div</b> en un grid, lo único que tenemos que hacer es establecer su display como grid:
                     </p>
                     <p className="paragraph slide slide--md slide-left"><b>display:grid</b></p>
                     <p className="paragraph slide slide--md slide-left">A partir de aquí podemos usar las siguientes propiedades:</p>

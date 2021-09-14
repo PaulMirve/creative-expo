@@ -36,7 +36,7 @@ export default function WhySass() {
                     </Paragraph>
                 </div>
             </div>
-            <Heading className="text-align-center mt-md mb-sm">SCSS hace escribir CSS mucho mas sencillo</Heading>
+            <Heading className="text-align-center mt-md mb-sm">SCSS hace escribir CSS mucho más sencillo</Heading>
             <div className="why-sass__features">
                 <button onClick={() => setDemo(1)} className="why-sass__btn">
                     <Heading type="3" className={`why-sass__feature ${demo === 1 && 'why-sass__feature--active'}`}>Variables</Heading>

@@ -25,7 +25,7 @@ export default function WhyGrid() {
                         <Heading type='3' color="black" className="slide-headings slide-right mb-sm">Entre otras muchas opciones...</Heading>
                     </span>
                     <p className="paragraph slide slide--md slide-right">
-                        Esta muy confundido con tantas opciones y posibilidades, hasta que descubrí...
+                        Estaba muy confundido con tantas opciones y posibilidades, hasta que descubrí...
                     </p>
                 </CardContent>
             </Card>

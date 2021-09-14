@@ -10,7 +10,7 @@ import Paragraph from '../../../Typography/Paragraph'
 export default function GridAreas() {
     return (
         <div className="grid-areas mt-lg">
-            <Heading className="text-align-center slide slide-down">De las funciones mas utiles de CSS Grid:</Heading>
+            <Heading className="text-align-center slide slide-down">De las funciones mas útiles de CSS Grid:</Heading>
             <Heading className="text-align-center slide slide--md slide-down">Grid areas</Heading>
             <Card type="double" className="mb-md mt-md">
                 <CardContent className="grid-areas__areas-layout">
